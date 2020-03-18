@@ -109,7 +109,7 @@ hr{
   z-index: 1;
   top: 0;
   padding-left: 10px;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: rgb(36, 35, 35);
 }
 </style>

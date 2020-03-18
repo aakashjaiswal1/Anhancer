@@ -7,14 +7,18 @@
           <input type="text" class="inner" placeholder="Last Name" required><sup>*</sup>
       </div>
       <div class="outer mt-5">
-          <input type="text" class="inner" style="margin-left:80px;" placeholder="Gender" required><sup>*</sup>
-          <input type="text" class="inner" style="margin-left:80px;" placeholder="DOB" required><sup>*</sup>
+          <select class="inner" style="margin-left:140px;">
+            <option value="Other">Other</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+        </select>
+          <input type="date" class="inner" style="margin-left:80px;" placeholder="DOB" required><sup>*</sup>
       </div>
       <div class="outer mt-5">
-          <input type="text" class="inner" style="width: 560px;" placeholder="Address Line 1" required><sup>*</sup>
+          <input type="text" class="inner" style="width: 560px;" placeholder="Address Line" required><sup>*</sup>
       </div>
       <div class="outer">
-          <button type="button" class="btn btn-success mt-5" style="margin-left: 265px;">Continue</button>
+          <button type="button" class="btn btn-success mt-5 custom-button">Save & Continue</button>
       </div>
   </div>
 </template>
@@ -32,7 +36,7 @@ h1{
     font-size: 1.5em;
     color: aqua;
 }
-input{
+input, select{
     font-size: 15px;
     background-color: transparent;
     border-top: none;
@@ -46,6 +50,19 @@ input:focus{
     outline: none !important;
 }
 
+input::placeholder{
+    text-align: center;
+}
+
+select:focus{
+    outline: none;
+}
+
+select option{
+background-color: rgb(36, 35, 35);
+color: white;
+}
+
 .outer{
     width: 100%;
     margin-top: 40px;
@@ -54,6 +71,15 @@ input:focus{
 
 .inner{
     margin-left: 20px;
+}
+
+.custom-button{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
 </style>
