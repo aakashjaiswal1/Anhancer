@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import image from "../assets/map.jpg";
+import image from "../../assets/map.jpg";
 export default {
     data: function(){
         return {

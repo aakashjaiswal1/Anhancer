@@ -10,16 +10,13 @@
                 <div class="carousel-item active">
                 <div class="boxes mt-5">
                     <img src="#" alt="resume goes here">
+                    1
                 </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" v-for="item in 9" v-bind:key="item">
                 <div class="boxes mt-5">
                     <img src="#" alt="resume goes here">
-                </div>
-                </div>
-                <div class="carousel-item">
-                <div class="boxes mt-5">
-                    <img src="#" alt="resume goes here">
+                    {{ item+1 }}
                 </div>
                 </div>
             </div>
